@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:image_viewer_bloc_w0provider/src/Api/Image_Api.dart';
-import 'package:image_viewer_bloc_w0provider/src/Bloc/Image_bloc.dart';
+
+import 'package:image_viewer_bloc_w0provider/src/api/image_api.dart';
+import 'package:image_viewer_bloc_w0provider/src/bloc/image_bloc.dart';
 
 class ImageList extends StatelessWidget {
   final imageBloc = ImageBloc(ImageAPI());
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +24,7 @@ class ImageList extends StatelessWidget {
       decoration: InputDecoration(
           border: OutlineInputBorder(),
           prefixIcon: Icon(Icons.search),
-          hintText: 'Search for anything... cats or doggos maybe'),
+          hintText: 'Search for anything... cats or dogs maybe'),
     );
   }
 

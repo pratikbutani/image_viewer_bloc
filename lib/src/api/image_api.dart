@@ -1,7 +1,9 @@
-import 'package:http/http.dart' show get;
 import 'dart:convert';
-import '../models/image_model.dart';
+
+import 'package:http/http.dart' show get;
+
 import '../api_key.dart';
+import '../models/image_model.dart';
 
 class ImageAPI {
   Future<List<Images>> makeRequest(String query) async {
